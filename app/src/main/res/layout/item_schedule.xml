@@ -13,15 +13,54 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/tvItemsSchedule"
+                android:id="@+id/tvItemsScheduleHour"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:gravity="right|bottom"
+                android:textSize="@dimen/ItemScheduleTitulo"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/tvItemsScheduleAm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A.M."
+                android:gravity="right|top"
+                android:textSize="@dimen/ItemScheduleSubtitulo"/>
+
         </LinearLayout>
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/tvItemScheduleConferenceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la canferencia"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:ellipsize="end"
+            android:lines="1"/>
+        <TextView
+            android:id="@+id/tvItemScheduleConferenceSpeakers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Speaker_Name"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:ellipsize="end"
+            android:lines="1"/>
+        <TextView
+            android:id="@+id/tvItemScheduleTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tag"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="#FFFFFF"/>
         </LinearLayout>
 
     </LinearLayout>
