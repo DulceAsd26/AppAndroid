@@ -2,6 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.google.gms.google-services'
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -37,4 +39,7 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-firestore'
 }
